@@ -287,6 +287,16 @@ CATEGORY_DEFAULTS = {
 }
 
 
+def get_compliance_norms() -> Dict[str, Any]:
+    """Returns structured compliance norms: FTA directory, category defaults, and portals."""
+    return {
+        "fta_directory": FTA_DIRECTORY,
+        "category_defaults": CATEGORY_DEFAULTS,
+        "government_portals": GOVERNMENT_PORTALS,
+        "recent_notifications": RECENT_NOTIFICATIONS,
+    }
+
+
 def get_compliance_overview() -> Dict[str, Any]:
     """Returns overview of Indian trade regulations, recent notifications, and portal links."""
     return {

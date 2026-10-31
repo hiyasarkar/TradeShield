@@ -1,0 +1,4 @@
+fastapi>=0.115.0
+pydantic>=2.7.0
+uvicorn[standard]>=0.30.0
+# Note: ml_client.py uses only stdlib (urllib) to call the ML service — no extra deps needed.

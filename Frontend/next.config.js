@@ -8,7 +8,7 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: `${fastApiUrl}/api/:path*`,
+        destination: `${fastApiUrl}/:path*`,
       },
     ];
   },
